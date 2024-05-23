@@ -19,7 +19,7 @@
             $_SESSION['username'] = $user['username'];
 
             // Yönlendirme
-            header('Location: ../homePage/welcome.php');
+            header('Location: ../homePage/main_page.php');
             exit();
         } else {
             echo "Kullanıcı adı veya şifre yanlış!";

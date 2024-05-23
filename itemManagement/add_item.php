@@ -43,7 +43,7 @@ if (!isset($_SESSION['username'])) {
         </form>
 
         <br>
-        <a href="../homePage/welcome.php">Back to Items List</a> <br>
+        <a href="../homePage/main_page.php">Back to Items List</a> <br>
     </div>
 
 </body>

@@ -102,7 +102,7 @@ $daysDiff = floor($secondsDiff / (60 * 60 * 24));
         <p style="color: red;">This auction is expired!</p>
     <?php endif; ?> <br>
 
-    <a href="../homePage/welcome.php">Back to 'Items List'</a> <br>
+    <a href="../homePage/main_page.php">Back to 'Items List'</a> <br>
 </div>
 
 

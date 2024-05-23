@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
             </tr>
 
             <?php
-            require_once 'welcome_process.php';
+            require_once 'main_page_process.php';
 
             foreach ($items as $item) {
                 echo "<tr>";

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($query->rowCount() > 0) {
         echo "Your item is successfully added.";
         echo "<br>";
-        echo "<a href='../homePage/welcome.php'>Go back to 'Items List'</a>";
+        echo "<a href='../homePage/main_page.php'>Go back to 'Items List'</a>";
     } else {
         echo "Error adding item. Please try again.";
     }
