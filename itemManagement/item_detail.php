@@ -79,8 +79,8 @@ $daysDiff = floor($secondsDiff / (60 * 60 * 24));
             <form method="post" action="update_item_price.php">
 
                 <div class="form-group">
-                    <label for="newPrice">Your Auction:</label>
-                    <input type="text" class="form-control" id="newPrice" name="newPrice" required><br>
+                    <label for="newBid">Your Auction:</label>
+                    <input type="text" class="form-control" id="newBid" name="newBid" required><br>
                     <input type="hidden" name="itemId" value="<?php echo $itemId; ?>">
                     <input type="hidden" name="itemDate" value="<?php echo $item['expired_date']; ?>">
                 </div>
@@ -111,16 +111,12 @@ $daysDiff = floor($secondsDiff / (60 * 60 * 24));
 <script>
     $(document).ready(function (){
 
-        console.log()
-
         function checkPrice(){
             $.ajax({
                 url:"check_item_price.php",
                 type:"POST",
                 data: { itemId: <?php echo $itemId; ?> },
                 success:function (result) {
-                    console.log(result);
-
                     if ($("#currentPrice").text() != result) {
                         $("#currentPrice").text(result);
                     }
