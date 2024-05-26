@@ -20,6 +20,8 @@
 <body class=" bg-secondary d-flex justify-content-center align-items-center vh-100" >
 
     <div class="container bg-light col-md-4">
+        <h2>Log In</h2>
+
         <form action="login_process.php" method="post"> <br>
 
             <div class="form-group">

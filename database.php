@@ -3,11 +3,11 @@
 try {
     $conn = mysqli_connect("127.0.0.1", "root", "");
 
-    $sql = 'CREATE DATABASE IF NOT EXISTS Proje';
+    $sql = 'CREATE DATABASE IF NOT EXISTS AuctionProject';
 
     if (mysqli_query($conn, $sql)) {
 
-        if (mysqli_query($conn, "USE Proje")) {
+        if (mysqli_query($conn, "USE AuctionProject")) {
 
             $sql = "CREATE TABLE IF NOT EXISTS users (
                 id INT PRIMARY KEY AUTO_INCREMENT,
@@ -41,7 +41,7 @@ try {
     }
 
     try {
-        $db = new PDO("mysql:host=127.0.0.1;dbname=Proje;charset=utf8", "root", "");
+        $db = new PDO("mysql:host=127.0.0.1;dbname=AuctionProject;charset=utf8", "root", "");
     } catch (PDOException $e) {
         die("Failed to connect to database: " . $e->getMessage());
     }
