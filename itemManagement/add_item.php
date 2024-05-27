@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
             </div>
 
             <div class="form-group">
-                <label for="itemDate">Date (DD-MM-YYYY):</label><br>
+                <label for="itemDate">Expiration Date (DD-MM-YYYY):</label><br>
                 <input type="date" class="form-control" id="itemDate" name="itemDate" required><br>
             </div>
 
